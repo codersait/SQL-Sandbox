@@ -11,11 +11,11 @@
   - `SELECT * FROM movies WHERE id NOT IN(1,2)`    // idsi 1 ve 2 olmayanlari getir
 
   ### Operators
-  - ` = ` `Case sensitive exact string comparison (notice the single equals)` e.g ` col_name = "abc" `
-  - ` != or <> ` `Case sensitive exact string inequality comparison`  e.g ` col_name != "abcd" `
-  - ` LIKE ` `Case insensitive exact string comparison` e.g ` col_name LIKE "ABC" `
-  - ` NOT LIKE ` `Case insensitive exact string inequality comparison` e.g ` col_name NOT LIKE "ABCD" `
-  - **` % `** `Used anywhere in a string to match a sequence of zero or more characters (only with LIKE or NOT LIKE)` e.g `col_name LIKE "%AT%"(matches "AT", "ATTIC", "CAT" or even "BATS")`
+  - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" `
+  - ` != or <> ` Case sensitive exact string inequality comparison  e.g ` col_name != "abcd" `
+  - ` LIKE ` Case insensitive exact string comparison e.g ` col_name LIKE "ABC" `
+  - ` NOT LIKE ` Case insensitive exact string inequality comparison e.g ` col_name NOT LIKE "ABCD" `
+  - ` % ` Used anywhere in a string to match a sequence of zero or more characters (only with LIKE or NOT LIKE) e.g `col_name LIKE "%AT%"(matches "AT", "ATTIC", "CAT" or even "BATS")`
   - 
  
 
