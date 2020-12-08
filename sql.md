@@ -19,7 +19,7 @@
 
   ### Operators
   - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" ` for **null** `col_name IS NULL`;
-  - ` != or <> ` Case sensitive exact string inequality comparison  e.g ` col_name != "abcd" ` for **null** `col_name IS NULL`
+  - ` != or <> ` Case sensitive exact string inequality comparison  e.g ` col_name != "abcd" ` for **null** `col_name IS NOT NULL`;
   - ` LIKE ` Case insensitive exact string comparison e.g ` col_name LIKE "ABC" `
   - ` NOT LIKE ` Case insensitive exact string inequality comparison e.g ` col_name NOT LIKE "ABCD" `
   - ` % ` Used anywhere in a string to match a sequence of zero or more characters (only with LIKE or NOT LIKE) e.g `col_name LIKE "%AT%"` (matches "AT", "ATTIC", "CAT" or even "BATS")
