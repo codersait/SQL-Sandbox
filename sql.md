@@ -9,8 +9,6 @@
   - `SELECT column, another_column, … FROM mytable;`
   - `SELECT * FROM mytable;`
   - `SELECT column, another_column, … FROM mytable WHERE condition AND/OR another_condition AND/OR …;`
-  - `SELECT column_names FROM table_name WHERE column_name IS NULL;` 
-  - `SELECT column_names FROM table_name WHERE column_name IS NOT NULL;`
   - `SELECT * FROM movies WHERE id IN(1,2)`  // idsi 1 ve 2 olanlari getir
   - `SELECT * FROM movies WHERE id NOT IN(1,2)`    // idsi 1 ve 2 olmayanlari getir
   - `SELECT DISTINCT column, another_column, … FROM mytable WHERE condition(s);`
@@ -20,8 +18,8 @@
   - 
 
   ### Operators
-  - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" `
-  - ` != or <> ` Case sensitive exact string inequality comparison  e.g ` col_name != "abcd" `
+  - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" ` for **null** `col_name IS NULL`;
+  - ` != or <> ` Case sensitive exact string inequality comparison  e.g ` col_name != "abcd" ` for **null** `col_name IS NULL`
   - ` LIKE ` Case insensitive exact string comparison e.g ` col_name LIKE "ABC" `
   - ` NOT LIKE ` Case insensitive exact string inequality comparison e.g ` col_name NOT LIKE "ABCD" `
   - ` % ` Used anywhere in a string to match a sequence of zero or more characters (only with LIKE or NOT LIKE) e.g `col_name LIKE "%AT%"` (matches "AT", "ATTIC", "CAT" or even "BATS")
