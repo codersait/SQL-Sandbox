@@ -9,12 +9,15 @@
   - `SELECT column, another_column, … FROM mytable;`
   - `SELECT * FROM mytable;`
   - `SELECT column, another_column, … FROM mytable WHERE condition AND/OR another_condition AND/OR …;`
+  - `SELECT column_names FROM table_name WHERE column_name IS NULL;` 
+  - `SELECT column_names FROM table_name WHERE column_name IS NOT NULL;`
   - `SELECT * FROM movies WHERE id IN(1,2)`  // idsi 1 ve 2 olanlari getir
   - `SELECT * FROM movies WHERE id NOT IN(1,2)`    // idsi 1 ve 2 olmayanlari getir
   - `SELECT DISTINCT column, another_column, … FROM mytable WHERE condition(s);`
   - `SELECT column, another_column, … FROM mytable WHERE condition(s) ORDER BY column ASC/DESC;`
   - `SELECT column, another_column, … FROM mytable WHERE condition(s) ORDER BY column ASC/DESC LIMIT num_limit OFFSET num_offset;` // offset is exclusive. e.g offset 5 --> 6 dahil ve sonrasi icin
   - `SELECT column, another_table_column, … FROM mytable INNER JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, … ASC/DESC LIMIT num_limit OFFSET num_offset;`
+  - 
 
   ### Operators
   - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" `
