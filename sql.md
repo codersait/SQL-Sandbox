@@ -16,6 +16,7 @@
   - `SELECT column, another_column, … FROM mytable WHERE condition(s) ORDER BY column ASC/DESC LIMIT num_limit OFFSET num_offset;` // offset is exclusive. e.g offset 5 --> 6 dahil ve sonrasi icin
   - `SELECT column, another_table_column, … FROM mytable INNER JOIN another_table ON mytable.id = another_table.id WHERE condition(s) ORDER BY column, … ASC/DESC LIMIT num_limit OFFSET num_offset;`
   - `SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth ORDER BY country_of_birth;` gruplama.
+  - `SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth HAVING COUNT(*) > 20 ORDER BY country_of_birth;`
 
   ### Operators
   - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" ` for **null** `col_name IS NULL`;
