@@ -20,6 +20,7 @@
   - `SELECT make, MIN(price) FROM car GROUP BY make ORDER BY MAKE;`
   - `SELECT id, make, model, price, ROUND(price * .10, 2) FROM car;`
   - `SELECT id, make, model, price, ROUND(price * .10, 2) AS discount_amount FROM car;` **ALIAS** column adini degistirme.
+  - `SELECT COALESCE(email,'Email not provided') FROM person;` null olan degerler icin default deger vermek icin.
 
   ### Operators
   - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" ` for **null** `col_name IS NULL`;
