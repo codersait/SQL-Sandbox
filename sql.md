@@ -23,6 +23,7 @@
   - `SELECT COALESCE(email,'Email not provided') FROM person;` null olan degerler icin default deger vermek icin.
   - `ALTER TABLE person ADD CONSTRAINT unique_email_address UNIQUE(email);`
   - `ALTER TABLE person ADD UNIQUE (email);` postgres kendi isimlendiriyor: **person_email_key**
+  - `ALTER TABLE person ADD CONSTRAINT gender_constraint CHECK ( gender = 'Female' OR gender = 'Male');`
 
   ### Operators
   - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" ` for **null** `col_name IS NULL`;
