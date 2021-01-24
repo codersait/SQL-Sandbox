@@ -18,6 +18,7 @@
   - `SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth ORDER BY country_of_birth;` gruplama.
   - `SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth HAVING COUNT(*) > 20 ORDER BY country_of_birth;`
   - `SELECT make, MIN(price) FROM car GROUP BY make ORDER BY MAKE;`
+  - `SELECT id, make, model, price, ROUND(price * .10, 2) FROM car;`
 
   ### Operators
   - ` = ` Case sensitive exact string comparison (notice the single equals) e.g ` col_name = "abc" ` for **null** `col_name IS NULL`;
